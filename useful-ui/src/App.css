@@ -1,0 +1,43 @@
+/* 로그인 폼에서 쓸만한 input */
+.container {
+  position: relative;
+
+}
+
+.input-group {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input {
+  border: solid 1.5px #ccc;
+  border-radius: 7px; 
+  background: none;
+  padding: 15px;
+  font-size: 18px;
+
+}
+
+.label {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  pointer-events: none;
+  transform: translateY(0);
+  font-size: 18px;
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  background-color: transparent;
+  padding: 0 0.2rem;
+}
+
+.input:focus, .input:valid {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.input:focus ~ .label, .label.shrink {
+  transform: translateX(-10%) translateY(-107%) scale(0.8);
+  background-color: #fff;
+
+
+}
